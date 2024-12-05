@@ -1,0 +1,64 @@
+.ResizeHandle {
+    position: absolute;
+    width: var(--resize-handle-size);
+    height: var(--resize-handle-size);
+    border-radius: var(--resize-handle-border-radius);
+    background: var(--resize-handle-background);
+    transform-origin: center;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 0 1px var(--selection-box-border-color);
+    transition: background-color 0.1s ease;
+    pointer-events: all;
+}
+
+.ResizeHandle:hover {
+    background: var(--resize-handle-hover-background);
+}
+
+.ResizeHandle[data-resize-side="top-left"] {
+    top: 0;
+    left: 0;
+    cursor: nwse-resize;
+}
+
+.ResizeHandle[data-resize-side="top"] {
+    top: 0;
+    left: 50%;
+    cursor: ns-resize;
+}
+
+.ResizeHandle[data-resize-side="top-right"] {
+    top: 0;
+    left: 100%;
+    cursor: nesw-resize;
+}
+
+.ResizeHandle[data-resize-side="left"] {
+    top: 50%;
+    left: 0;
+    cursor: ew-resize;
+}
+
+.ResizeHandle[data-resize-side="right"] {
+    top: 50%;
+    left: 100%;
+    cursor: ew-resize;
+}
+
+.ResizeHandle[data-resize-side="bottom-left"] {
+    top: 100%;
+    left: 0;
+    cursor: nesw-resize;
+}
+
+.ResizeHandle[data-resize-side="bottom"] {
+    top: 100%;
+    left: 50%;
+    cursor: ns-resize;
+}
+
+.ResizeHandle[data-resize-side="bottom-right"] {
+    top: 100%;
+    left: 100%;
+    cursor: nwse-resize;
+}

@@ -1,0 +1,8 @@
+.Actor {
+  cursor: default;
+  position: absolute;
+}
+
+.Selected {
+  color: blue;
+}

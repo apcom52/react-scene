@@ -1,0 +1,7 @@
+.RotateHandle {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: center;
+    left: 50%;
+    top: -20px;
+}

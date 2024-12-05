@@ -1,0 +1,12 @@
+.Scene {
+    --accent: #009688;
+    --resize-handle-background: #ffffff;
+    --resize-handle-hover-background: #E0F2F1;
+    --resize-handle-border-radius: 2px;
+    --resize-handle-size: 8px;
+    --selection-box-border-color: #009688;
+    --selection-box-border-width: 2px;
+
+    overflow: hidden;
+    user-select: none;
+}
